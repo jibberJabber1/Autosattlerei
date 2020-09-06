@@ -1,0 +1,48 @@
+<div class="container">
+  <div *ngIf="submitted" class="postSubmitContainer">
+    <span>{{status}}</span>
+    <p><a routerLink="/">Go back to homepage</a></p>
+  </div>
+  <form *ngIf="!submitted" novalidate [formGroup]="refForm" (ngSubmit)="onSubmit(refForm, refForm.isValid)">
+    <div class="form-group">
+      <label>
+        <span>Name</span>
+      </label>
+      <input type="text" formControlName="Name" class="form-control" placeholder="Name">
+      <div [hidden]="refForm.controls.Name.valid || refForm.controls.Name.pristine" class="alert alert-danger">
+        <span *ngIf="!refForm.controls.Name.valid">Name is required!</span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>
+        <span>E-mail </span>
+      </label>
+      <input type="text" formControlName="Email" class="form-control" placeholder="Email">
+      <div [hidden]="refForm.controls.Email.valid || refForm.controls.Email.pristine" class="alert alert-danger">
+        <span *ngIf="refForm.controls.Email.errors && refForm.controls.Email.errors.required"> Email is required! </span>
+        <span *ngIf="refForm.controls.Email.errors && refForm.controls.Email.errors.pattern && !refForm.controls.Email.errors.required "> Email format is invalid!</span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>
+        <span>Tel. no. </span>
+      </label>
+      <input type="text" formControlName="TelNo" class="form-control" placeholder="Tel.no.">
+      <div [hidden]="refForm.controls.TelNo.valid || refForm.controls.TelNo.pristine" class="alert alert-danger">
+        <span *ngIf="!refForm.controls.TelNo.pattern">Invalid phone number!</span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>
+        <span>Message</span>
+      </label>
+      <textarea formControlName="Message" class="form-control" placeholder="Message"></textarea>
+      <div [hidden]="refForm.controls.Message.valid || refForm.controls.Message.pristine" class="alert alert-danger">
+
+        <span *ngIf="!refForm.controls.Message.valid">Message is required!</span>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-success" [disabled]="!refForm.valid">Submit</button>
+  </form>
+</div>
+
