@@ -29,6 +29,7 @@
 
   <ItemGroup>
     <None Remove="ClientApp\src\app\contact-form\contact-form.component.ts" />
+    <None Remove="ClientApp\src\app\map\map.component.ts" />
     <None Remove="ClientApp\src\app\shared\models\Email.ts" />
   </ItemGroup>
 
@@ -38,6 +39,7 @@
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\src\app\contact-form\contact-form.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\map\map.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\shared\models\Email.ts" />
   </ItemGroup>
 
