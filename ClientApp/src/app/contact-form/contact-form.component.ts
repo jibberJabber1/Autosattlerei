@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 
 import { MapComponent } from '../map/map.component';
 import { Email } from '../shared/models/Email';
+import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
 
 @Component({
   selector: 'app-contact-form',
@@ -14,6 +15,7 @@ export class ContactFormComponent implements OnInit {
   refForm: FormGroup;
   public status: String;
   submitted: boolean = false;
+  public captchaValidated: boolean = false;
 
   constructor(private http: HttpClient, private fb: FormBuilder) { }
 
@@ -22,7 +24,8 @@ export class ContactFormComponent implements OnInit {
       Name: ['', [Validators.required, Validators.minLength(3)]],
       Email: ['', [Validators.required, Validators.pattern(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)]],
       TelNo: [],
-      Message: ['', [Validators.required]]
+      Message: ['', [Validators.required]],
+      recaptchaReactive: []
     });
   }
 
@@ -42,6 +45,12 @@ export class ContactFormComponent implements OnInit {
     this.status = "Sorry, there was an error. Try contacting us by phone.";
     this.submitted = true;
     console.log('oops', error)
+  }
+
+  resolved(captchaResponse: string, res) {
+    this.captchaValidated = true;
+    console.log(`Resolved response token: ${captchaResponse}`);
+
   }
 
 

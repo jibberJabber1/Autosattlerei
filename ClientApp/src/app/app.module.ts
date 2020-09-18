@@ -12,6 +12,8 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MapComponent } from './map/map.component';
+import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
+import { AppService } from '../../app-backend/src/app/app.service';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { MapComponent } from './map/map.component';
     HttpClientModule,
     FormsModule, 
     ReactiveFormsModule,
+    RecaptchaModule,
+    RecaptchaFormsModule, 
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'contact-form', component: ContactFormComponent },
@@ -35,7 +39,9 @@ import { MapComponent } from './map/map.component';
       { path: 'fetch-data', component: FetchDataComponent },
     ])
   ],
-  providers: [],
+  providers: [
+    AppService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
