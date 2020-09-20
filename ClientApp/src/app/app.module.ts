@@ -14,6 +14,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MapComponent } from './map/map.component';
 import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
 import { AppService } from '../../app-backend/src/app/app.service';
+import { PictureGalleryComponent } from './picture-gallery/picture-gallery.component';
+import { Angular2ImageGalleryModule } from 'angular2-image-gallery';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { AppService } from '../../app-backend/src/app/app.service';
     CounterComponent,
     FetchDataComponent,
     ContactFormComponent,
-    MapComponent
+    MapComponent,
+    PictureGalleryComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -31,11 +34,13 @@ import { AppService } from '../../app-backend/src/app/app.service';
     FormsModule, 
     ReactiveFormsModule,
     RecaptchaModule,
-    RecaptchaFormsModule, 
+    RecaptchaFormsModule,
+    Angular2ImageGalleryModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'contact-form', component: ContactFormComponent },
       { path: 'counter', component: CounterComponent },
+      { path: 'picture-gallery', component: PictureGalleryComponent },
       { path: 'fetch-data', component: FetchDataComponent },
     ])
   ],
