@@ -1,0 +1,162 @@
+.home-intro {
+  align-items: center;
+  max-width: 150rem;
+  margin: auto;
+}
+.home-intro .autosattlerei-logo {
+  line-height: 2;
+}
+.home-intro .autosattlerei-logo p {
+  font-size: 125%;
+  max-width: 27rem;
+  text-align: start;
+  margin: 30px auto;
+}
+.home-intro .autosattlerei-logo .figure-left .img-fluid {
+  width: 30%;
+  margin: 3rem;
+}
+.home-intro .figure {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.home-intro .figure-left .caption-center {
+  color: #000;
+}
+.home-intro .figure-left .caption-center h1 {
+  max-width: 50rem;
+  margin: auto;
+  font-size: 350%;
+  text-align: initial;
+}
+.home-intro .figure-right {
+  float: right;
+}
+.home-intro .figure-right .caption-right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff00;
+  font-size: 700%;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+  writing-mode: vertical-rl;
+}
+.home-intro .figure-right .caption-right p {
+  margin: 0;
+  line-height: 1;
+}
+
+.service-container {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -o-display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-top: 10rem;
+  background-image: url("../../assets/img/homepage-images/Autosattlerei-Schneider-interior.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 70rem;
+  margin: 10rem auto 3rem;
+  max-width: 150rem;
+}
+.service-container h2, .service-container p {
+  color: #000;
+  font-size: 125%;
+}
+.service-container h1 {
+  color: #fff;
+  font-size: 500%;
+}
+.service-container .service-content {
+  display: flex;
+  width: 100%;
+  flex-flow: wrap;
+  max-width: 125rem;
+  margin: 0 auto;
+}
+.service-container .service-content .column {
+  background-color: #fff;
+  margin: 15px;
+  float: left;
+  flex: 1;
+  padding: 15px;
+}
+.service-container .service-type-3 a {
+  text-decoration: none;
+  color: #ff6c4b;
+  font-weight: 400;
+  font-size: 125%;
+}
+.service-container .service-type-3 a:hover {
+  color: #ff0808;
+  font-weight: 900;
+}
+
+@media (max-width: 1200px) {
+  .caption-right p {
+    font-size: 80%;
+  }
+}
+@media (max-width: 992px) {
+  .home-intro .figure.figure-left h3 {
+    font-size: 125%;
+  }
+  .home-intro .figure.figure-left .caption-center h1, .home-intro .figure.figure-left .caption-center p {
+    font-size: 125%;
+  }
+
+  .caption-right p {
+    font-size: 60%;
+  }
+
+  .service-container {
+    margin-top: 2rem;
+    min-height: 35rem;
+  }
+  .service-container h1 {
+    font-size: 200%;
+    margin-top: 0.5rem;
+  }
+}
+@media (max-width: 768px) {
+  div.col-md, section {
+    line-height: 1;
+    font-size: 100%;
+  }
+  div.col-md p:not(.caption-right p), section p:not(.caption-right p) {
+    font-size: 100%;
+  }
+  div.col-md .caption-right p, section .caption-right p {
+    font-size: 36px;
+  }
+  div.col-md .figure-left p, section .figure-left p {
+    font-size: 100%;
+    line-height: 1;
+  }
+  div.col-md .figure-left h1, div.col-md .figure-left h2, div.col-md .figure-left h3, section .figure-left h1, section .figure-left h2, section .figure-left h3 {
+    font-size: 125%;
+    font-weight: 600;
+  }
+
+  .service-container .service-type-3 a {
+    font-size: 100%;
+  }
+
+  .homepage-container p {
+    font-size: 100%;
+    line-height: 1;
+  }
+  .homepage-container h1, .homepage-container h2, .homepage-container h3 {
+    font-size: 125%;
+    font-weight: 600;
+  }
+}
+
+/*# sourceMappingURL=home.component.css.map */

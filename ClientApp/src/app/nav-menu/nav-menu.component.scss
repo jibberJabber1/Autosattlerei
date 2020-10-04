@@ -1,0 +1,85 @@
+// screen sizes
+$sm: 576px;
+$med: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+$p-size-rg: 100%;
+$p-size-lg: 150%;
+$h-size-rg: 150%;
+
+// browser support
+
+@mixin crossBrowser($property, $cssVal) {
+	-webkit-#{$property} :$cssVal;
+	-moz-#{$property} : $cssVal;
+	-o-#{$property} : $cssVal;
+	#{$property} : $cssVal;
+}
+
+.navbar {
+
+    .navbar-brand {
+        display: block;
+        height: 6rem;
+        img {
+            display: block;
+            width: auto;
+            height: 100%;
+        }
+    }
+    .navbar-collapse {
+        justify-content: flex-end;
+        .navbar-nav {
+            width: 40%;
+            margin-left: 60%;
+            a {
+                color: #000;
+                margin: auto;
+                font-size: 200%;         
+                position: relative;
+                
+                &:hover {
+                    font-weight: 600;
+                    color: #252525;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $xl) {
+    .navbar {
+        .navbar-collapse {
+            .navbar-nav {
+                a {
+                    font-size: 150%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $lg) {
+    .navbar {
+        .navbar-collapse {
+            .navbar-nav {
+                a {
+                    font-size: 125%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $med) {
+    .navbar {
+        .navbar-collapse {
+            .navbar-nav {
+                a {
+                    font-size: 100%;
+                }
+            }
+        }
+    }
+}
