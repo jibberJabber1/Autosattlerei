@@ -1,10 +1,10 @@
-<div class="container">
+<div class="container container-fluid col-md-12">
   <div *ngIf="submitted" class="postSubmitContainer">
     <span>{{status}}</span>
     <p><a routerLink="/">Go back to homepage</a></p>
   </div>
-  <div *ngIf="!submitted">
-    <form novalidate [formGroup]="refForm" (ngSubmit)="onSubmit(refForm, refForm.isValid)">
+  <div *ngIf="!submitted" class="contact-form-items-wrapper">
+    <form novalidate [formGroup]="refForm" (ngSubmit)="onSubmit(refForm, refForm.isValid)" class="contact-form-item input-section">
       <div class="form-group">
         <label>
           <span>Name</span>
@@ -47,8 +47,13 @@
       </div>
       <button type="submit" class="btn btn-success" [disabled]="!refForm.valid || !captchaValidated">Submit</button>
     </form>
-    <app-map></app-map>
+    <app-map class="contact-form-item map"></app-map>
   </div>
+  <footer class="footer">
+      <p><a href="#">Datenschutz</a></p>
+      <div class="imprint">
+      </div>
+  </footer>
 </div>
 
 

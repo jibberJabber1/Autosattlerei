@@ -1,0 +1,51 @@
+// screen sizes
+$sm: 576px;
+$med: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+$p-size-rg: 100%;
+$p-size-lg: 125%;
+$h-size-rg: 125%;
+
+// browser support
+
+@mixin crossBrowser($property, $cssVal) {
+	-webkit-#{$property} :$cssVal;
+	-moz-#{$property} : $cssVal;
+	-o-#{$property} : $cssVal;
+	#{$property} : $cssVal;
+}
+
+.contact-form-items-wrapper {
+    @include crossBrowser(display, flex);
+    flex-direction: row;
+    margin: 2rem;
+    padding: 1rem;
+    .contact-form-item {
+        @include crossBrowser(flex, 1);
+        margin: 1rem;
+        .row {
+            display: block;
+        }
+    }
+}
+
+
+@media (max-width: $lg) {
+    .contact-form-items-wrapper {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        .contact-form-item {
+            flex: 1;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 0;
+        }
+
+        .row {
+            display: block;
+        }
+    }
+}
