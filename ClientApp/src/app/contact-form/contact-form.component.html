@@ -1,8 +1,23 @@
-<div class="container container-fluid col-md-12">
+<div class="container contact-form-container">
   <div *ngIf="submitted" class="postSubmitContainer">
     <span>{{status}}</span>
     <p><a routerLink="/">Go back to homepage</a></p>
   </div>
+
+<div class="contact-form-header">
+  <h1 class="header1">Kontaktieren Sie uns!</h1>
+  <div class="header-left header-item">
+      <h5 class="header2">Wir kommen schnellmöglichst auf Sie zu!</h5>
+  </div>
+  <div class="header-right header-item">
+    <ul class="imprint-list">
+      <li class="imprint-list-item">Autosattlerei-Schneider</li>
+      <li class="imprint-list-item">Tel.: +49 1517 0313000</li>
+      <li class="imprint-list-item">Email.: info@autosattlerei-schneider.de</li>
+  </ul>
+  </div>
+</div>
+
   <div *ngIf="!submitted" class="contact-form-items-wrapper">
     <form novalidate [formGroup]="refForm" (ngSubmit)="onSubmit(refForm, refForm.isValid)" class="contact-form-item input-section">
       <div class="form-group">
@@ -49,11 +64,6 @@
     </form>
     <app-map class="contact-form-item map"></app-map>
   </div>
-  <footer class="footer">
-      <p><a href="#">Datenschutz</a></p>
-      <div class="imprint">
-      </div>
-  </footer>
 </div>
 
 
