@@ -106,7 +106,8 @@ $h-size-rg: 125%;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	min-height: 70rem;
+	min-height: 40rem;
+	max-height: 60rem;
 	margin: 10rem auto 3rem;
 	max-width: 150rem;
 	h2, p {
@@ -114,8 +115,11 @@ $h-size-rg: 125%;
 		font-size: $p-size-lg;
 	}
 	h1 {
-		color: #fff;
-		font-size: 500%;
+		font-weight: 100;
+		color: #ffffff00;
+		font-size: 700%;
+		-webkit-text-stroke-width: 2px;
+		-webkit-text-stroke-color: white;
 
 	}
 	.service-content {
@@ -131,6 +135,13 @@ $h-size-rg: 125%;
 			float: left;
 			flex: 1;
 			padding: 15px;
+
+			.divider {
+				display: block;
+				width: 80%;
+				border: 1px solid #d5af8d;
+				margin: 1rem auto;
+			}
 		}
 	}
 
@@ -177,17 +188,11 @@ $h-size-rg: 125%;
         margin-top: 2rem;
         min-height: 35rem;
         h1 {
-			font-size: 200%;
+			font-size: 150%;
 			margin-top: .5rem;
+			-webkit-text-stroke-width: 1px;
+			font-weight: 100 !important;
 		}
-
-		// h2 {
-		// 	font-size: 125%;
-		// }
-		
-		// p {
-		// 	font-size: 125%;
-		// }
     }
 }
 
@@ -216,5 +221,11 @@ $h-size-rg: 125%;
 
 	.homepage-container {
 		@include reset;
+	}
+}
+
+@media (min-width: 1200px) {
+	.homepage-container.container {
+		max-width: 100rem;
 	}
 }

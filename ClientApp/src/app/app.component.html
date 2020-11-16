@@ -1,16 +1,52 @@
 <div class='container-fluid'>
-  <div class='row'>
-    <div class='col-sm-12'>
+
+  <div class='navigation-container'>
+    <div class='navigation'>
       <app-nav-menu></app-nav-menu>
     </div>
-
   </div>
+<span class="line"></span>
 
-  <div class='row'>
-
-    <div class='col-sm-12 body-content'>
+    <div class='body-content'>
       <router-outlet></router-outlet>
     </div>
 
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <figure class="footer-logo">
+        <a href="#" class="footer-logo-link"><img src="./assets/img/homepage-images/AS_logo_1_png.png" alt="Autosattlerei-Schneider-global" class="footer-logo-image"></a>
+      </figure>
+
+      <nav class="footer-nav">
+        <div class="footer-nav-group">
+          <h3>Impressum</h3>
+            <ul class="imprint-list">
+              <li class="imprint-list-item imprint-data-protection"><a href="#">Datenschutz</a></li>
+              <li class="imprint-list-item">Autosattlerei-Schneider</li>
+              <li class="imprint-list-item">Inhaber: Laimute Schneider</li>
+              <li class="imprint-list-item">Tel.: +49 1517 0313000</li>
+              <li class="imprint-list-item">Email.: info@autosattlerei-schneider.de</li>
+              <li class="imprint-list-item">StNr. 159 260 01717G16 102</li>
+              <li class="imprint-list-item">Am Clausberg 4</li>
+              <li class="imprint-list-item">99610 Vogelsberg</li>
+          </ul>
+        </div>
+        <div class="footer-nav-group">
+          <h3>Stichwörter</h3>
+          <ul class="keywords-list">
+            <li class="keywords-list-item">#Sitzbzüge</li>
+            <li class="keywords-list-item">#Autosattlerei</li>
+            <li class="keywords-list-item">#Ledersitze</li>
+            <li class="keywords-list-item">#Auto</li>
+            <li class="keywords-list-item">#Motorrad</li>
+            <li class="keywords-list-item">#Neubezüge</li>
+          </ul>
+        </div>
+      </nav>
   </div>
-  </div>
+  </footer>
+
+
+
+</div>
