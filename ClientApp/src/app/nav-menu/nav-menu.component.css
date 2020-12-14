@@ -11,28 +11,32 @@
   justify-content: flex-end;
 }
 .navbar .navbar-collapse .navbar-nav {
-  width: 40%;
-  margin-left: 60%;
+  width: 50%;
+  margin-left: 50%;
 }
 .navbar .navbar-collapse .navbar-nav a {
   color: #000;
   margin: auto;
-  font-size: 200%;
+  font-size: 150%;
   position: relative;
 }
-.navbar .navbar-collapse .navbar-nav a:hover {
-  font-weight: 600;
-  color: #252525;
-}
+  .navbar .navbar-collapse .navbar-nav a:hover {
+    font-weight: 600;
+    color: #604554;
+  }
 
 @media (max-width: 1200px) {
   .navbar .navbar-collapse .navbar-nav a {
-    font-size: 150%;
+    font-size: 125%;
   }
 }
 @media (max-width: 992px) {
   .navbar .navbar-collapse .navbar-nav a {
     font-size: 125%;
+  }
+
+  .tel-no {
+      font-size: 1rem;
   }
 }
 @media (max-width: 768px) {

@@ -29,6 +29,7 @@
 
   <ItemGroup>
     <None Remove="ClientApp\src\app\contact-form\contact-form.component.ts" />
+    <None Remove="ClientApp\src\app\datenschutz\datenschutz.component.ts" />
     <None Remove="ClientApp\src\app\map\map.component.ts" />
     <None Remove="ClientApp\src\app\picture-gallery\picture-gallery.component.ts" />
     <None Remove="ClientApp\src\app\shared\models\Email.ts" />
@@ -36,10 +37,12 @@
 
   <ItemGroup>
     <Folder Include="ClientApp\src\app\impressum\" />
+    <Folder Include="ClientApp\src\assets\fonts\flaticon\" />
   </ItemGroup>
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\src\app\contact-form\contact-form.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\datenschutz\datenschutz.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\map\map.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\picture-gallery\picture-gallery.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\shared\models\Email.ts" />

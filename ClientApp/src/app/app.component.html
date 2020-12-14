@@ -5,48 +5,128 @@
       <app-nav-menu></app-nav-menu>
     </div>
   </div>
-<span class="line"></span>
+  <span class="line"></span>
 
-    <div class='body-content'>
-      <router-outlet></router-outlet>
+  <div class='body-content' id="body-content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<div class="footer sigma_footer dark-bg pattern-squares sigma_footer-dark">
+  <div class="footer-wrapper-top">
+  <div class="footer-container-1">
+    <img src="./assets/img/homepage-images/AS_logo_1_png.png" alt="Autosattlerei-Schneider-global" class="footer-image next-to">
+    <p class="next-to">Der erste und direkte Ansprechspartner rund um Lederhandwerk und Autositze.</p>
+  </div>
+
+
+  <div class="footer-container-2">
+    <p class="mb-0 custom-primary fw-600">Leistungen:</p>
+    <p class="next-to"><i class="fas fa-check"></i> Reparatur</p>
+    <p class="next-to"><i class="fas fa-check"></i> Neubezug</p>
+    <p class="next-to"><i class="fas fa-check"></i> Einrichtung</p>
+  </div>
+
+  <div class="footer-container-3">
+    <div class="footer-contact-item">
+      <p class="mb-0 custom-primary fw-600">Adresse:</p>
+      <span>Am Clausberg 4,<br /> 99610 Vogelsberg</span>
     </div>
 
-  <footer class="footer">
-    <div class="footer-inner">
+    <div class="footer-contact-item">
+      <p class="mb-0 custom-primary fw-600">Telefonnummer:</p>
+      <span>+49 1517 0313000</span>
+    </div>
 
-      <figure class="footer-logo">
-        <a href="#" class="footer-logo-link"><img src="./assets/img/homepage-images/AS_logo_1_png.png" alt="Autosattlerei-Schneider-global" class="footer-logo-image"></a>
-      </figure>
+    <div class="footer-contact-item">
+      <p class=" mb-0 custom-primary fw-600">E-Mail:</p>
+      <span>info@autosattlerei-schneider.de</span>
+    </div>
 
-      <nav class="footer-nav">
-        <div class="footer-nav-group">
-          <h3>Impressum</h3>
-            <ul class="imprint-list">
-              <li class="imprint-list-item imprint-data-protection"><a href="#">Datenschutz</a></li>
-              <li class="imprint-list-item">Autosattlerei-Schneider</li>
-              <li class="imprint-list-item">Inhaber: Laimute Schneider</li>
-              <li class="imprint-list-item">Tel.: +49 1517 0313000</li>
-              <li class="imprint-list-item">Email.: info@autosattlerei-schneider.de</li>
-              <li class="imprint-list-item">StNr. 159 260 01717G16 102</li>
-              <li class="imprint-list-item">Am Clausberg 4</li>
-              <li class="imprint-list-item">99610 Vogelsberg</li>
-          </ul>
-        </div>
-        <div class="footer-nav-group">
-          <h3>Stichwörter</h3>
-          <ul class="keywords-list">
-            <li class="keywords-list-item">#Sitzbzüge</li>
-            <li class="keywords-list-item">#Autosattlerei</li>
-            <li class="keywords-list-item">#Ledersitze</li>
-            <li class="keywords-list-item">#Auto</li>
-            <li class="keywords-list-item">#Motorrad</li>
-            <li class="keywords-list-item">#Neubezüge</li>
-          </ul>
-        </div>
-      </nav>
   </div>
-  </footer>
+</div>
+
+  <div class="sigma_footer-bottom">
+
+
+          <div class="sigma_footer-copyright">
+            <p> Copyright © Autosattlerei-Schneider - 2020 </p>
+          </div>
+       
+          <div class="sigma_flex-menu">
+            <ul class="justify-content-center justify-content-lg-end mt-3 mt-lg-0">
+              <li> <a class="text-white" routerLink="/impressum-und-datenschutzerklaerung">Impressum & Datenschutzerklärung</a> </li>
+            </ul>
+          </div>
+       
+  </div>
+
+
+
+
+
+
+
+
 
 
 
 </div>
+
+
+
+<!--<div class="footer">
+    <footer class="sigma_footer dark-bg pattern-squares sigma_footer-dark">
+      <div class="sigma_footer-middle">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 footer-widget">
+              <img src="./assets/img/homepage-images/AS_logo_1_png.png" alt="Autosattlerei-Schneider-global" class="mb-4">
+              <p class="mb-4">Der erste und direkte Ansprechspartner rund um Lederhandwerk und Autositze.</p>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 footer-widget widget-menu">
+              <h5 class="widget-title">Leistungen</h5>
+              <ul>
+                <li>Reparatur</li>
+                <li>Neubezug</li>
+                <li>Einrichtung</li>
+              </ul>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 footer-widget">
+              <h5 class="widget-title">Kontaktinformationen</h5>
+              <div class="mb-3">
+                <span>Am Clausberg 4,<br/> 99610 Vogelsberg</span>
+              </div>
+              <div class="mb-3">
+                <p class="mb-0 custom-primary fw-600">Telefonnummer:</p>
+                <span>+49 1517 0313000</span>
+              </div>
+              <div class="mb-0">
+                <p class="mb-0 custom-primary fw-600">E-Mail:</p>
+                <span>info@autosattlerei-schneider.de</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sigma_footer-bottom">
+        <div class="container">
+          <div class="row justify-content-betweem">
+            <div class="col-lg-6">
+              <div class="sigma_footer-copyright">
+                <p> Copyright © Autosattlerei-Schneider - 2020 </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="sigma_flex-menu">
+                <ul class="justify-content-center justify-content-lg-end mt-3 mt-lg-0">
+                  <li> <a class="text-white" routerLink="/impressum-und-datenschutzerklaerung">Impressum & Datenschutzerklärung</a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>-->

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using autosattlerei.Models;
 using autosattlerei.Models.Interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -43,7 +44,7 @@ namespace autosattlerei.Controllers
                 }
 
             }
-            catch
+            catch (Exception e)
             {
                 throw;
             }

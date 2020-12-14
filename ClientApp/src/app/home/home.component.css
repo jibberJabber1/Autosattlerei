@@ -62,9 +62,9 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 40rem;
-  max-height: 60rem;
-  margin: 10rem auto 3rem;
+  /*min-height: 40rem;*/
+  /*max-height: 60rem;*/
+  margin: 3rem auto;
   max-width: 150rem;
 }
 .service-container h2, .service-container p {
@@ -157,14 +157,23 @@
     font-weight: 600;
   }
 
+  /* div.col-md .figure-left h1, div.col-md .figure-left h2, div.col-md .figure-left h3, section .figure-left h1, section .figure-left h2, section .figure-left h3 {
+     font-size: 125%;
+     font-weight: 600;
+   }*/
   .service-container .service-type-3 a {
     font-size: 100%;
   }
 
-  .homepage-container p {
+  .homepage-container p p {
     font-size: 100%;
     line-height: 1;
   }
+  .homepage-container p h1, .homepage-container p h2, .homepage-container p h3 {
+    font-size: 125%;
+    font-weight: 600;
+  }
+
   .homepage-container h1, .homepage-container h2, .homepage-container h3 {
     font-size: 125%;
     font-weight: 600;

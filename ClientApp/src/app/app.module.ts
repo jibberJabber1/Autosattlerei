@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
+import { DatenschutzComponent } from './datenschutz/datenschutz.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
@@ -26,7 +27,8 @@ import { Angular2ImageGalleryModule } from 'angular2-image-gallery';
     FetchDataComponent,
     ContactFormComponent,
     MapComponent,
-    PictureGalleryComponent
+    PictureGalleryComponent,
+    DatenschutzComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -42,6 +44,7 @@ import { Angular2ImageGalleryModule } from 'angular2-image-gallery';
       { path: 'counter', component: CounterComponent },
       { path: 'picture-gallery', component: PictureGalleryComponent },
       { path: 'fetch-data', component: FetchDataComponent },
+      { path: 'impressum-und-datenschutzerklaerung', component: DatenschutzComponent },
     ])
   ],
   providers: [

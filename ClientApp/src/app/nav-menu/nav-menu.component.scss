@@ -36,7 +36,7 @@ $h-size-rg: 150%;
             a {
                 color: #000;
                 margin: auto;
-                font-size: 200%;         
+                font-size: 150%;         
                 position: relative;
                 
                 &:hover {
@@ -66,6 +66,10 @@ $h-size-rg: 150%;
             .navbar-nav {
                 a {
                     font-size: 125%;
+                }
+
+                .tel-no {
+                    font-size: 1rem;
                 }
             }
         }

@@ -38,12 +38,12 @@ export class ContactFormComponent implements OnInit {
   }
 
   handleSuccess() {
-    this.status = "Thanks. Message sent successfully.";
+    this.status = "Danke. Die Nachricht wurde erfolgreich gesendet.";
     this.submitted = true;
   }
 
   handleFailure(error) {
-    this.status = "Sorry, there was an error. Try contacting us by phone.";
+    this.status = "Es tut uns Leid, es gab einen Fehler. Versuchen Sie uns anstatt dessen anzurufen.";
     this.submitted = true;
     console.log('oops', error)
   }

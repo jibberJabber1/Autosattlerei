@@ -106,9 +106,9 @@ $h-size-rg: 125%;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	min-height: 40rem;
-	max-height: 60rem;
-	margin: 10rem auto 3rem;
+	/*min-height: 40rem;*/
+	/*max-height: 60rem;*/
+	margin: 3rem auto;
 	max-width: 150rem;
 	h2, p {
 		color: #000;
@@ -213,15 +213,25 @@ $h-size-rg: 125%;
 		}
 	}
 
+ /* div.col-md .figure-left h1, div.col-md .figure-left h2, div.col-md .figure-left h3, section .figure-left h1, section .figure-left h2, section .figure-left h3 {
+    font-size: 125%;
+    font-weight: 600;
+  }*/
+
 	.service-container {
 		.service-type-3 a {
 			font-size: 100%;
 		}
 	}
 
-	.homepage-container {
+	.homepage-container p {
 		@include reset;
 	}
+
+  .homepage-container h1, .homepage-container h2, .homepage-container h3 {
+    font-size: 125%;
+    font-weight: 600;
+  }
 }
 
 @media (min-width: 1200px) {
